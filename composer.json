@@ -1,6 +1,6 @@
 {
     "name": "puff/server",
-    "description": "Protocol-independent Fiber TCP and UDP servers for PHP Fiber Framework",
+    "description": "Protocol-independent Fiber TCP and UDP servers for PHP Unison Fiber Framework",
     "type": "library",
     "keywords": [
         "php",

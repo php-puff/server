@@ -1,7 +1,7 @@
 <?php
 
 /*
- * PHP Fiber Framework
+ * PHP Unison Fiber Framework
  * https://github.com/php-puff/server
  * https://github.com/php-puff/server/issues
  * Copyright (c) Puff

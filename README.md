@@ -1,6 +1,6 @@
 # Puff Server
 
-Protocol-independent Fiber TCP and UDP transports for PHP Fiber Framework.
+Protocol-independent Fiber TCP and UDP transports for PHP Unison Fiber Framework.
 
 `puff/server` owns sockets, normalized IPv4/IPv6 endpoints, TCP connections, UDP datagrams, buffered writes and EventLoop watchers. Higher-level packages implement the transport-specific protocol interfaces:
 
