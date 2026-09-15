@@ -9,13 +9,13 @@
 
 declare(strict_types=1);
 
+// Configure the shared worker count in config/config.php.
 return [
     // HTTP server example.
     // [
     //     'type' => 'http',
     //     'addr' => '0.0.0.0:8620',
-    //     'workers' => 1,
-    //     'routes' => [\dirname(__DIR__) . '/app/routes.php'],
+    //     'routes' => [\dirname(__DIR__) . '/web/routes.php'],
     //     'pipeline' => [],
     //     'trusted_proxies' => [],
     // ],
@@ -24,8 +24,7 @@ return [
     // [
     //     'type' => 'websocket',
     //     'addr' => '127.0.0.1:8791',
-    //     'workers' => 1,
-    //     'routes' => [\dirname(__DIR__) . '/app/websocket.php'],
+    //     'routes' => [\dirname(__DIR__) . '/wss/websocket.php'],
     //     'allowed_origins' => [],
     //     'protocols' => [],
     // ],
@@ -34,6 +33,5 @@ return [
     // [
     //     'type' => 'mcp',
     //     'addr' => '127.0.0.1:9090',
-    //     'workers' => 1,
     // ],
 ];

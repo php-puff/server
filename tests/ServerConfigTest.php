@@ -21,10 +21,10 @@ final class ServerConfigTest extends TestCase
         $servers = ServerConfig::all([[
             'type' => 'http',
             'addr' => '[::1]:8620',
-        ]]);
+        ]], 2);
 
         self::assertSame('[::1]:8620', $servers[0]['addr']);
-        self::assertSame(1, $servers[0]['workers']);
+        self::assertSame(2, $servers[0]['workers']);
     }
 
     public function testRejectsDuplicateAddresses(): void
@@ -35,5 +35,16 @@ final class ServerConfigTest extends TestCase
             ['type' => 'http', 'addr' => '127.0.0.1:8620'],
             ['type' => 'websocket', 'addr' => '127.0.0.1:8620'],
         ]);
+    }
+
+    public function testRejectsWorkersOnIndividualServers(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+
+        ServerConfig::all([[
+            'type' => 'http',
+            'addr' => '127.0.0.1:8620',
+            'workers' => 2,
+        ]]);
     }
 }
