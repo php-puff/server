@@ -33,6 +33,13 @@
             "Puff\\Server\\Tests\\": "tests/"
         }
     },
+    "extra": {
+        "puff": {
+            "config": {
+                "server.php": "config/server.php"
+            }
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
