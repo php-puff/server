@@ -18,6 +18,7 @@ return [
     //     'routes' => [\dirname(__DIR__) . '/web/routes.php'],
     //     'pipeline' => [],
     //     'trusted_proxies' => [],
+    //     'wwwroot' => \dirname(__DIR__) . '/www/assets',
     // ],
 
     // WebSocket server example.
