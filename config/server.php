@@ -33,6 +33,6 @@ return [
     // MCP server example. Its remaining options are provided by puff/mcp-server.
     // [
     //     'type' => 'mcp',
-    //     'addr' => '127.0.0.1:9090',
+    //     'addr' => '0.0.0.0:8120',
     // ],
 ];
